@@ -104,7 +104,7 @@ description: "A great Jekyll theme developed by Sal @wowthemesnet."
         {% if fourth_post.image %}
         <div class="col-md-4">
           <a href="{{ fourth_post.url | relative_url }}">
-            <img class="w-100" src="{% if fourth_post.image contains "://" %}{{ fourth_post.image }}{% else %}/{{ fourth_post.image | relative_url }}{% endif %}" alt="{{ fourth_post.title }}">
+            <img class="w-100" src="{% if fourth_post.image contains "://" %}{{ fourth_post.image }}{% else %}{{ fourth_post.image | relative_url }}{% endif %}" alt="{{ fourth_post.title }}">
           </a>
         </div>
         {% endif %}
